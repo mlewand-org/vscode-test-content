@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Provides a set of helper functions for setting or getting the content and selection of a Visual Studio Code instance.",
   "main": "src/index.js",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "publisher": "mlewand",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "vscode-postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run vscode-postinstall && node ./node_modules/vscode/bin/test"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,19 @@
   "bugs": {
     "url": "https://github.com/mlewand-org/vscode-test-content/issues"
   },
-  "homepage": "https://github.com/mlewand-org/vscode-test-content#readme"
+  "homepage": "https://github.com/mlewand-org/vscode-test-content#readme",
+  "dependencies": {
+    "vscode": "^1.0.0",
+    "vscode-test-get-content": "^2.0.4",
+    "vscode-test-set-content": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  },
+  "activationEvents": [],
+  "directories": {
+    "test": "test"
+  }
 }
