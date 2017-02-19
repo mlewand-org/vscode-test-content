@@ -1,0 +1,19 @@
+{
+  "name": "vscode-test-content",
+  "version": "1.0.0",
+  "description": "Provides a set of helper functions for setting or getting the content and selection of a Visual Studio Code instance.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlewand-org/vscode-test-content.git"
+  },
+  "author": "Marek Lewandowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlewand-org/vscode-test-content/issues"
+  },
+  "homepage": "https://github.com/mlewand-org/vscode-test-content#readme"
+}
