@@ -4,7 +4,7 @@
   "description": "Provides a set of helper functions for setting or getting the content and selection of a Visual Studio Code instance.",
   "main": "src/index.js",
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^1.6.0"
   },
   "publisher": "mlewand",
   "scripts": {
