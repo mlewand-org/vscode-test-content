@@ -1,0 +1,19 @@
+
+environment:
+  ELECTRON_RUN_AS_NODE: 1
+
+install:
+  - ps: Install-Product node 6.8.1 x64
+  - npm install -g npm --silent
+  - npm install
+
+platform:
+  - x86
+  - x64
+
+build: off
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
