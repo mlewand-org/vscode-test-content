@@ -1,6 +1,6 @@
 {
   "name": "vscode-test-content",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provides a set of helper functions for setting or getting the content and selection of a Visual Studio Code instance.",
   "main": "src/index.js",
   "engines": {
