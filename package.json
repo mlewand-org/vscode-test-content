@@ -23,7 +23,7 @@
   "homepage": "https://github.com/mlewand-org/vscode-test-content#readme",
   "dependencies": {
     "vscode": "^1.0.0",
-    "vscode-test-get-content": "^2.0.4",
+    "vscode-test-get-content": "^2.1.0",
     "vscode-test-set-content": "^1.0.1"
   },
   "devDependencies": {
