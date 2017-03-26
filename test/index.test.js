@@ -17,6 +17,37 @@ suite( 'Test integration', function() {
                 assert.equal( mainModule.get( editor ), 'What a great selection!' );
             } );
     } );
+
+    test( 'Markers customization', () => {
+        let setOptions = {
+                active: {
+                    start: '🚒',
+                    end: '🚒'
+                },
+                anchor: {
+                    start: '🦄',
+                    end: '🦄'
+                },
+                caret: '🍗'
+            },
+            getOptions = {
+                active: {
+                    start: '&',
+                    end: '&'
+                },
+                anchor: {
+                    start: '%',
+                    end: '%'
+                },
+                caret: '#'
+            };
+
+        return mainModule.setWithSelection( 'W🍗hat 🦄a great selection🚒!', setOptions )
+            .then( editor => {
+                // assert.equal( mainModule.getWithSelection( editor, getOptions ), 'W#hat %a great selection&!' );
+                assert.equal( mainModule.get( editor ), 'What a great selection!' );
+            } );
+    } );
 } );
 
 suite( 'Readme examples', function() {
