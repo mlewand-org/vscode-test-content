@@ -61,6 +61,10 @@ For more information, see [vscode-test-set-content](https://github.com/mlewand-o
 
         Active part is the part where the selection ended, and it's the point from which the selection is continued from if you continue to enlarge the selection.
 
+### Marker Customization
+
+It's possible to use custom marker characters. See [vscode-test-set-content docs](https://github.com/mlewand-org/vscode-test-set-content/#customizing-markers) for more details.
+
 ## Limitations
 
 * Nested and intersecting ranges are not handled, since those are not handled in VSCode itself as of version 1.9.1.
